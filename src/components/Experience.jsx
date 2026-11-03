@@ -66,7 +66,7 @@ export default function Experience() {
                 <div className="absolute left-4 md:left-1/2 w-4 h-4 bg-indigo-500 rounded-full border-4 border-[#0f172a] md:-translate-x-1/2 z-10" />
 
                 {/* Content */}
-                <div className={`ml-12 md:ml-0 md:w-1/2 ${i % 2 === 0 ? "md:pr-12" : "md:pl-12"}`}>
+                <div className={`ml-10 sm:ml-12 md:ml-0 md:w-1/2 ${i % 2 === 0 ? "md:pr-12" : "md:pl-12"}`}>
                   <div className="glass-card rounded-xl p-6 hover:border-indigo-500/50 transition-all">
                     <div className="flex items-center gap-2 text-indigo-400 text-sm mb-2">
                       <Calendar size={14} />

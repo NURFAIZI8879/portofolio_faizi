@@ -13,23 +13,23 @@ export default function ProjectCard({ project, index }) {
     >
       {/* Thumbnail */}
       <div
-        className="relative h-48 overflow-hidden"
+        className="relative h-40 sm:h-48 overflow-hidden"
         style={{
           background: `linear-gradient(135deg, ${project.color}33, ${project.color}11)`,
         }}
       >
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-6xl opacity-30">
+          <div className="text-5xl sm:text-6xl opacity-30">
             {project.category === "AR / Game" ? "🎮" : "🌐"}
           </div>
         </div>
-        <div className="absolute top-3 right-3 flex gap-2">
+        <div className="absolute top-2 sm:top-3 right-2 sm:right-3 flex gap-1.5 sm:gap-2">
           {project.featured && (
-            <span className="px-2 py-1 bg-indigo-500/90 text-white text-xs rounded-full font-medium">
+            <span className="px-2 py-1 bg-indigo-500/90 text-white text-[10px] sm:text-xs rounded-full font-medium">
               Featured
             </span>
           )}
-          <span className="px-2 py-1 bg-slate-900/80 text-slate-300 text-xs rounded-full">
+          <span className="px-2 py-1 bg-slate-900/80 text-slate-300 text-[10px] sm:text-xs rounded-full">
             {project.category}
           </span>
         </div>
@@ -37,19 +37,19 @@ export default function ProjectCard({ project, index }) {
       </div>
 
       {/* Content */}
-      <div className="p-5">
-        <h3 className="text-lg font-bold text-white mb-1 group-hover:text-indigo-400 transition-colors">
+      <div className="p-4 sm:p-5">
+        <h3 className="text-base sm:text-lg font-bold text-white mb-1 group-hover:text-indigo-400 transition-colors">
           {project.title}
         </h3>
-        <p className="text-sm text-slate-400 mb-3">{project.subtitle}</p>
-        <p className="text-sm text-slate-300 mb-4 line-clamp-3">{project.description}</p>
+        <p className="text-xs sm:text-sm text-slate-400 mb-2 sm:mb-3">{project.subtitle}</p>
+        <p className="text-xs sm:text-sm text-slate-300 mb-3 sm:mb-4 line-clamp-3">{project.description}</p>
 
         {/* Tech stack */}
-        <div className="flex flex-wrap gap-1.5 mb-4">
+        <div className="flex flex-wrap gap-1 sm:gap-1.5 mb-3 sm:mb-4">
           {project.tech.map((t) => (
             <span
               key={t}
-              className="px-2 py-0.5 bg-slate-800 text-slate-300 text-xs rounded-md border border-slate-700"
+              className="px-1.5 sm:px-2 py-0.5 bg-slate-800 text-slate-300 text-[10px] sm:text-xs rounded-md border border-slate-700"
             >
               {t}
             </span>
@@ -57,15 +57,15 @@ export default function ProjectCard({ project, index }) {
         </div>
 
         {/* Links */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
           {project.liveUrl && (
             <a
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1.5 text-sm text-indigo-400 hover:text-indigo-300 transition-colors font-medium"
+              className="flex items-center gap-1 text-xs sm:text-sm text-indigo-400 hover:text-indigo-300 transition-colors font-medium"
             >
-              <ExternalLink size={16} />
+              <ExternalLink size={14} className="sm:w-4 sm:h-4" />
               Live Demo
             </a>
           )}
@@ -74,18 +74,18 @@ export default function ProjectCard({ project, index }) {
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1.5 text-sm text-slate-400 hover:text-white transition-colors"
+              className="flex items-center gap-1 text-xs sm:text-sm text-slate-400 hover:text-white transition-colors"
             >
-              <Github size={16} />
+              <Github size={14} className="sm:w-4 sm:h-4" />
               Source
             </a>
           )}
           <Link
             to={`/project/${project.id}`}
-            className="ml-auto flex items-center gap-1 text-sm text-slate-500 hover:text-indigo-400 transition-colors"
+            className="ml-auto flex items-center gap-1 text-xs sm:text-sm text-slate-500 hover:text-indigo-400 transition-colors"
           >
             Detail
-            <ArrowUpRight size={14} />
+            <ArrowUpRight size={12} className="sm:w-3.5 sm:h-3.5" />
           </Link>
         </div>
       </div>

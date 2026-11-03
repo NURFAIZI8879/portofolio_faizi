@@ -48,7 +48,7 @@ export default function Education() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-12">
           {education.map((edu, i) => (
             <motion.div
               key={i}
