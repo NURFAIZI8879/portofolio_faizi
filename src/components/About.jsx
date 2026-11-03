@@ -43,15 +43,14 @@ export default function About() {
               data digital.
             </p>
             <p className="text-slate-300 leading-relaxed mb-4">
-              Berpengalaman dalam pengembangan web full-stack (React, Next.js, PHP,
-              Firebase, MySQL), aplikasi AR (Unity + Vuforia), dan sistem informasi.
-              Pernah meraih Juara Harapan 1 dalam Lomba Inovasi Kota Palembang
-              sebagai Full-Stack Developer.
+              Memiliki pengalaman dalam pengembangan web dan aplikasi AR. Pernah
+              berkontribusi sebagai developer dalam tim Lomba Inovasi Kota Palembang
+              dan meraih Juara Harapan 1 (Kategori Masyarakat Tematik).
             </p>
             <p className="text-slate-300 leading-relaxed mb-6">
-              Memiliki skill di bidang Cyber Security, Network Security, dan IT
-              Support & Troubleshooting. Aktif mencari peluang kerja sebagai
-              developer.
+              Memiliki skill di bidang IT Support & Troubleshooting, Cyber Security,
+              Network Security, dan pengelolaan data. Aktif mencari peluang kerja
+              di bidang IT.
             </p>
 
             <div className="flex flex-wrap gap-3">

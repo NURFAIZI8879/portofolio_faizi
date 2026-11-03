@@ -15,15 +15,23 @@ export default function Navbar() {
 
   useEffect(() => setIsOpen(false), [location]);
 
+  const scrollTo = (id) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+    setIsOpen(false);
+  };
+
   const links = [
-    { to: "/", label: "Home" },
-    { to: "/#about", label: "About" },
-    { to: "/#experience", label: "Experience" },
-    { to: "/#education", label: "Education" },
-    { to: "/#skills", label: "Skills" },
-    { to: "/#achievements", label: "Achievements" },
-    { to: "/#projects", label: "Projects" },
-    { to: "/#contact", label: "Contact" },
+    { id: "home", label: "Home" },
+    { id: "about", label: "About" },
+    { id: "experience", label: "Experience" },
+    { id: "education", label: "Education" },
+    { id: "skills", label: "Skills" },
+    { id: "achievements", label: "Achievements" },
+    { id: "projects", label: "Projects" },
+    { id: "contact", label: "Contact" },
   ];
 
   return (
@@ -37,25 +45,25 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 group">
+          <button onClick={() => scrollTo("home")} className="flex items-center gap-2 group cursor-pointer">
             <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-indigo-500 to-cyan-500 flex items-center justify-center text-white font-bold text-sm pulse-glow">
               F
             </div>
             <span className="font-semibold text-lg tracking-tight group-hover:text-indigo-400 transition-colors">
               Portfolio
             </span>
-          </Link>
+          </button>
 
           {/* Desktop Links */}
           <div className="hidden md:flex items-center gap-1">
             {links.map((l) => (
-              <a
-                key={l.label}
-                href={l.to}
-                className="px-3 py-2 text-sm text-slate-300 hover:text-white hover:bg-slate-800/50 rounded-lg transition-all"
+              <button
+                key={l.id}
+                onClick={() => scrollTo(l.id)}
+                className="px-3 py-2 text-sm text-slate-300 hover:text-white hover:bg-slate-800/50 rounded-lg transition-all cursor-pointer"
               >
                 {l.label}
-              </a>
+              </button>
             ))}
             <a
               href="https://github.com/NURFAIZI8879"
@@ -82,13 +90,13 @@ export default function Navbar() {
         <div className="md:hidden bg-[#0f172a]/95 backdrop-blur-lg border-b border-slate-700/50">
           <div className="px-4 py-3 space-y-1">
             {links.map((l) => (
-              <a
-                key={l.label}
-                href={l.to}
-                className="block px-3 py-2 text-slate-300 hover:text-white hover:bg-slate-800/50 rounded-lg transition-all"
+              <button
+                key={l.id}
+                onClick={() => scrollTo(l.id)}
+                className="block w-full text-left px-3 py-2 text-slate-300 hover:text-white hover:bg-slate-800/50 rounded-lg transition-all cursor-pointer"
               >
                 {l.label}
-              </a>
+              </button>
             ))}
             <div className="flex gap-4 pt-2 px-3">
               <a href="https://github.com/NURFAIZI8879" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white">

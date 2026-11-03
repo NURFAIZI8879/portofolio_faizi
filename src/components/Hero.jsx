@@ -3,7 +3,7 @@ import { Github, Linkedin, Mail, ArrowDown, Download } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       {/* Background gradient orbs */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 -left-32 w-96 h-96 bg-indigo-500/20 rounded-full blur-3xl" />
@@ -50,7 +50,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-xl sm:text-2xl text-slate-300 mb-2"
         >
-          Full-Stack Developer & AR/Unity Developer
+          IT Support & Web Developer
         </motion.p>
 
         <motion.p
@@ -59,9 +59,9 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="text-slate-400 max-w-2xl mx-auto mb-8 text-base sm:text-lg"
         >
-          Lulusan D4 Teknologi Informatika Multimedia Digital. Berpengalaman dalam
-          pengembangan web full-stack, aplikasi AR, dan solusi digital.
-          Berbasis di Palembang, Sumatera Selatan.
+          Lulusan D4 Teknologi Informatika Multimedia Digital. Berpengalaman di bidang
+          IT Support, pengembangan web, dan aplikasi AR. Berbasis di Palembang,
+          Sumatera Selatan.
         </motion.p>
 
         <motion.div
