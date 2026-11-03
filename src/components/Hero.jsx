@@ -30,7 +30,7 @@ export default function Hero() {
         >
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 text-sm">
             <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-            Available for work
+            Open to work
           </span>
         </motion.div>
 
@@ -59,8 +59,9 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="text-slate-400 max-w-2xl mx-auto mb-8 text-base sm:text-lg"
         >
-          Saya membangun aplikasi web modern, pengalaman AR interaktif, dan solusi digital
-          yang menggabungkan teknologi dengan kreativitas. Berbasis di Palembang, Indonesia.
+          Lulusan D4 Teknologi Informatika Multimedia Digital. Berpengalaman dalam
+          pengembangan web full-stack, aplikasi AR, dan solusi digital.
+          Berbasis di Palembang, Sumatera Selatan.
         </motion.p>
 
         <motion.div
@@ -98,7 +99,7 @@ export default function Hero() {
           <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">
             <Linkedin size={22} />
           </a>
-          <a href="mailto:nurfaizi8879@gmail.com" className="text-slate-400 hover:text-white transition-colors">
+          <a href="mailto:faiziasyi140406@gmail.com" className="text-slate-400 hover:text-white transition-colors">
             <Mail size={22} />
           </a>
         </motion.div>

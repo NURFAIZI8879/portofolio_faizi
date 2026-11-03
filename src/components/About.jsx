@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
-import { Code, Smartphone, Gamepad2, Database, Rocket } from "lucide-react";
+import { Code, Gamepad2, Database, Award, Briefcase, GraduationCap } from "lucide-react";
 
 const highlights = [
-  { icon: Code, label: "Web Development", desc: "React, Next.js, Tailwind, Firebase" },
+  { icon: Code, label: "Web Development", desc: "React, Next.js, PHP, Tailwind" },
   { icon: Gamepad2, label: "AR / Game Dev", desc: "Unity, Vuforia, C#" },
-  { icon: Database, label: "Backend", desc: "PHP, MySQL, Node.js, REST API" },
-  { icon: Smartphone, label: "Responsive", desc: "Mobile-first, accessible design" },
+  { icon: Database, label: "Backend & DB", desc: "Firebase, MySQL, REST API" },
+  { icon: Award, label: "Prestasi", desc: "Juara Harapan 1 Lomba Inovasi" },
 ];
 
 export default function About() {
@@ -36,26 +36,30 @@ export default function About() {
             transition={{ duration: 0.6 }}
           >
             <p className="text-slate-300 leading-relaxed mb-4">
-              Saya adalah seorang developer yang fokus pada pengembangan aplikasi web modern
-              dan teknologi Augmented Reality (AR). Saya senang menggabungkan teknologi dengan
-              kreativitas untuk menciptakan pengalaman yang bermakna bagi pengguna.
+              Saya adalah lulusan D4 Teknologi Informatika Multimedia Digital dari
+              Politeknik Negeri Sriwijaya dengan IPK 3.49. Memiliki pengalaman
+              magang di LLDIKTI Wilayah II sebagai tim Hukum, Kepegawaian, dan
+              Tatalaksana, di mana terlibat dalam pengelolaan sistem informasi dan
+              data digital.
             </p>
             <p className="text-slate-300 leading-relaxed mb-4">
-              Berpengalaman dalam membangun website full-stack, aplikasi AR edukasi,
-              dan platform belajar coding. Memiliki pemahaman tentang siklus pengembangan
-              software dari konsep hingga deployment.
+              Berpengalaman dalam pengembangan web full-stack (React, Next.js, PHP,
+              Firebase, MySQL), aplikasi AR (Unity + Vuforia), dan sistem informasi.
+              Pernah meraih Juara Harapan 1 dalam Lomba Inovasi Kota Palembang
+              sebagai Full-Stack Developer.
             </p>
             <p className="text-slate-300 leading-relaxed mb-6">
-              Saat ini sedang menyelesaikan skripsi tentang aplikasi AR edukasi komponen
-              elektronika, dan aktif mencari peluang kerja sebagai developer.
+              Memiliki skill di bidang Cyber Security, Network Security, dan IT
+              Support & Troubleshooting. Aktif mencari peluang kerja sebagai
+              developer.
             </p>
 
             <div className="flex flex-wrap gap-3">
               <span className="px-3 py-1 bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 rounded-full text-sm">
-                📍 Palembang, Indonesia
+                📍 Palembang, Sumatera Selatan
               </span>
               <span className="px-3 py-1 bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 rounded-full text-sm">
-                🎓 Mahasiswa (Skripsi)
+                🎓 D4 Teknologi Informatika
               </span>
               <span className="px-3 py-1 bg-green-500/10 border border-green-500/30 text-green-300 rounded-full text-sm">
                 💼 Open to work

@@ -18,7 +18,10 @@ export default function Navbar() {
   const links = [
     { to: "/", label: "Home" },
     { to: "/#about", label: "About" },
+    { to: "/#experience", label: "Experience" },
+    { to: "/#education", label: "Education" },
     { to: "/#skills", label: "Skills" },
+    { to: "/#achievements", label: "Achievements" },
     { to: "/#projects", label: "Projects" },
     { to: "/#contact", label: "Contact" },
   ];
@@ -94,7 +97,7 @@ export default function Navbar() {
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white">
                 <Linkedin size={20} />
               </a>
-              <a href="mailto:nurfaizi8879@gmail.com" className="text-slate-400 hover:text-white">
+              <a href="mailto:faiziasyi140406@gmail.com" className="text-slate-400 hover:text-white">
                 <Mail size={20} />
               </a>
             </div>
