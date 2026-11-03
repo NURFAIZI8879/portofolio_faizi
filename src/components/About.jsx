@@ -10,14 +10,14 @@ const highlights = [
 
 export default function About() {
   return (
-    <section id="about" className="py-20 sm:py-28">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="about" className="py-14 sm:py-20">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-12"
+          className="text-center mb-8"
         >
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
             Tentang <span className="gradient-text">Saya</span>
@@ -27,7 +27,7 @@ export default function About() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* Text */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}

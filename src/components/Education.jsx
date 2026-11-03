@@ -31,14 +31,14 @@ const training = [
 
 export default function Education() {
   return (
-    <section id="education" className="py-20 sm:py-28">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="education" className="py-14 sm:py-20">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-12"
+          className="text-center mb-8"
         >
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
             Pendidikan & <span className="gradient-text">Pelatihan</span>
@@ -48,7 +48,7 @@ export default function Education() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-4 md:gap-8 mb-8 sm:mb-8">
           {education.map((edu, i) => (
             <motion.div
               key={i}

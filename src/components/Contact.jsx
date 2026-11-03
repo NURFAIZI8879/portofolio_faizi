@@ -20,14 +20,14 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 sm:py-28 bg-slate-900/50">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="py-14 sm:py-20 bg-slate-900/50">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-12"
+          className="text-center mb-8"
         >
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
             Hubungi <span className="gradient-text">Saya</span>
@@ -37,7 +37,7 @@ export default function Contact() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-2 gap-8">
           {/* Contact info */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}

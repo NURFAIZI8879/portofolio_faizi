@@ -21,7 +21,7 @@ export default function Hero() {
         }}
       />
 
-      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -57,7 +57,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="text-slate-400 max-w-2xl mx-auto mb-8 text-base sm:text-lg"
+          className="text-slate-400 max-w-xl mx-auto mb-6 text-sm sm:text-base"
         >
           Lulusan D4 Teknologi Informatika Multimedia Digital. Berpengalaman di bidang
           IT Support, pengembangan web, dan aplikasi AR. Berbasis di Palembang,

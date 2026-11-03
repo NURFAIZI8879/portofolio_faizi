@@ -17,14 +17,14 @@ const achievements = [
 
 export default function Achievements() {
   return (
-    <section id="achievements" className="py-20 sm:py-28 bg-slate-900/50">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="achievements" className="py-14 sm:py-20 bg-slate-900/50">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-12"
+          className="text-center mb-8"
         >
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
             Pencapaian & <span className="gradient-text">Penghargaan</span>
@@ -44,7 +44,7 @@ export default function Achievements() {
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="glass-card rounded-2xl p-6 sm:p-8 hover:border-amber-500/50 transition-all"
             >
-              <div className="flex flex-col sm:flex-row items-start gap-6">
+              <div className="flex flex-col sm:flex-row items-start gap-4">
                 <div
                   className="w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0"
                   style={{ backgroundColor: `${ach.color}20` }}
