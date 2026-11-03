@@ -50,24 +50,10 @@ export const projects = [
     thumbnail: null,
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "MDX"],
     category: "Web App",
-    liveUrl: null,
+    liveUrl: "https://nurfaizi8879.github.io/belajar-kode/",
     githubUrl: "https://github.com/NURFAIZI8879/belajar-kode",
     featured: false,
     color: "#22c55e",
-  },
-  {
-    id: "al-auto-html",
-    title: "AL AUTO (Versi HTML)",
-    subtitle: "Website Kursus Mengemudi (Versi Original)",
-    description:
-      "Versi original website AL AUTO Kursus Mengemudi berbasis HTML + Firebase. Merupakan versi awal sebelum migrasi ke React. Fitur: hero video, testimoni, pendaftaran, absensi, panel admin.",
-    thumbnail: null,
-    tech: ["HTML", "CSS", "JavaScript", "Firebase"],
-    category: "Web App",
-    liveUrl: null,
-    githubUrl: "https://github.com/NURFAIZI8879/AL-AUTO",
-    featured: false,
-    color: "#ec4899",
   },
 ];
 
