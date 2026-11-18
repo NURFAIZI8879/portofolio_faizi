@@ -15,16 +15,9 @@ Website portfolio pribadi yang menampilkan profil, skills, pengalaman, pendidika
 
 ### Screenshot
 
-Screenshot akan ditambahkan di sini.
-
-| Halaman | Preview |
-|---------|---------|
-| Hero | docs/screenshots/hero.png |
-| About | docs/screenshots/about.png |
-| Skills | docs/screenshots/skills.png |
-| Experience | docs/screenshots/experience.png |
-| Projects | docs/screenshots/projects.png |
-| Contact | docs/screenshots/contact.png |
+| Desktop | Mobile |
+|---------|--------|
+| ![Halaman utama - desktop](docs/screenshots/hero.png) | ![Halaman utama - mobile](docs/screenshots/mobile.png) |
 
 ---
 
@@ -42,7 +35,7 @@ Portfolio ini dibuat sebagai media presentasi profesional untuk melamar kerja di
 
 ## Fitur Utama
 
-- **Hero Section** - Nama, title, tagline, CTA buttons, social links, foto profil, scroll indicator.
+- **Hero Section** - Foto profil profesional, nama, title, tagline, CTA buttons, social links, scroll indicator.
 - **About Me** - Deskripsi diri, highlights (IT Support, Web Dev, AR/Game, Prestasi), tags (lokasi, pendidikan, status).
 - **Skills & Tech Stack** - 5 kategori (Web Dev, Backend & DB, AR/Game Dev, IT & Security, Soft Skills) dengan progress bar animasi.
 - **Experience** - Timeline pengalaman kerja (Magang LLDIKTI, Full-Stack Developer Lomba Inovasi).
@@ -77,8 +70,12 @@ portofolio_faizi/
     style.css           # Stylesheet (design system + responsive)
  js/
     script.js           # JavaScript (theme, scroll, form, animations)
- assets/                 # (opsional) gambar, CV, screenshot
+ assets/
+    foto-profil.png     # Foto profil di hero section
+    icons/              # Favicon
+    images/             # Open Graph image
  docs/                   # GitHub Pages deployment copy
+    screenshots/        # Screenshot untuk README
  .gitignore
  README.md
 ```
@@ -159,14 +156,15 @@ cd portofolio_faizi
 
 ## Rencana Pengembangan
 
-- [ ] Tambah foto profesional (ganti placeholder)
-- [ ] Upload CV PDF
-- [ ] Upload screenshot proyek
-- [ ] Tambah section Experience & Education (timeline)
+- [x] Tambah foto profesional di hero section
+- [x] Section Experience & Education (timeline)
+- [x] Responsive mobile-first (360px - 1440px)
+- [x] Meta tags & Open Graph image
+- [ ] Upload CV PDF (tombol Download CV)
+- [ ] Upload screenshot/thumbnail proyek
 - [ ] Tambah section Testimonial
 - [ ] Integrasi blog/artikel
 - [ ] Setup custom domain (faizi.dev)
-- [ ] Optimasi SEO (meta tags, Open Graph)
 - [ ] Lighthouse score 90+
 
 ---
