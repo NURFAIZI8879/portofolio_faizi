@@ -76,6 +76,7 @@ portofolio_faizi/
     script.js           # JavaScript (theme, scroll, form, animations)
  assets/
     foto-profil.png     # Foto profil di hero section
+    cv-nurfaizi.pdf     # CV untuk tombol Download CV
     icons/              # Favicon
     images/             # Open Graph image + screenshot proyek
        projects/        # Thumbnail tiap proyek
@@ -126,6 +127,7 @@ cd portofolio_faizi
 - Lokasi: Palembang, Sumatera Selatan
 - GitHub: https://github.com/NURFAIZI8879
 - LinkedIn: https://www.linkedin.com/in/nur-faizi-1526782a4/
+- CV: [Download CV](assets/cv-nurfaizi.pdf)
 
 ### Pendidikan
 - D4 Teknologi Informatika Multimedia Digital - Politeknik Negeri Sriwijaya (2022-2026, IPK 3.49)
@@ -166,7 +168,7 @@ cd portofolio_faizi
 - [x] Responsive mobile-first (360px - 1440px)
 - [x] Meta tags & Open Graph image
 - [x] Thumbnail screenshot proyek di section Projects
-- [ ] Upload CV PDF (tombol Download CV)
+- [x] Upload CV PDF (tombol Download CV)
 - [ ] Tambah section Testimonial
 - [ ] Integrasi blog/artikel
 - [ ] Setup custom domain (faizi.dev)
