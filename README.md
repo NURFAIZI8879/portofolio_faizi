@@ -41,7 +41,7 @@ Portfolio ini dibuat sebagai media presentasi profesional untuk melamar kerja di
 - **Experience** - Timeline pengalaman kerja (Magang LLDIKTI, Full-Stack Developer Lomba Inovasi).
 - **Education** - Riwayat pendidikan (D4 Politeknik Negeri Sriwijaya, SMA) + pelatihan (Vinix7).
 - **Achievements** - Juara Harapan 1 Lomba Inovasi Kota Palembang 2024.
-- **Projects** - 4 proyek dengan filter kategori, tech badges, Live Demo & Source links.
+- **Projects** - 4 proyek dengan thumbnail screenshot, tech badges, Live Demo & Source links.
 - **Contact** - Info kontak (email, WhatsApp, lokasi) + form pesan.
 - **Dark/Light Mode** - Toggle tema.
 - **Responsive** - Mobile-first, tested di 360px, 768px, 1024px, 1440px.
@@ -73,7 +73,8 @@ portofolio_faizi/
  assets/
     foto-profil.png     # Foto profil di hero section
     icons/              # Favicon
-    images/             # Open Graph image
+    images/             # Open Graph image + screenshot proyek
+       projects/        # Thumbnail tiap proyek
  docs/                   # GitHub Pages deployment copy
     screenshots/        # Screenshot untuk README
  .gitignore
@@ -107,7 +108,7 @@ cd portofolio_faizi
 ### Deploy ke GitHub Pages
 
 1. Push ke GitHub (branch main)
-2. Settings -> Pages -> Source: main branch, / (root)
+2. Settings -> Pages -> Source: main branch, `/docs`
 3. Website otomatis live di https://nurfaizi8879.github.io/portofolio_faizi/
 
 ---
@@ -148,7 +149,7 @@ cd portofolio_faizi
   - Desain dan pengembangan website portfolio dari awal.
   - Implementasi dark/light mode toggle.
   - Animasi scroll reveal, hover effects, smooth scrolling.
-  - Integrasi data proyek dari GitHub.
+  - Penyusunan konten proyek dan tautan demo/source.
   - Responsive design (mobile-first).
   - Deployment ke GitHub Pages.
 
@@ -160,8 +161,8 @@ cd portofolio_faizi
 - [x] Section Experience & Education (timeline)
 - [x] Responsive mobile-first (360px - 1440px)
 - [x] Meta tags & Open Graph image
+- [x] Thumbnail screenshot proyek di section Projects
 - [ ] Upload CV PDF (tombol Download CV)
-- [ ] Upload screenshot/thumbnail proyek
 - [ ] Tambah section Testimonial
 - [ ] Integrasi blog/artikel
 - [ ] Setup custom domain (faizi.dev)
@@ -185,4 +186,4 @@ Proyek ini untuk keperluan portofolio pribadi.
 
 ---
 
-Catatan untuk recruiter: Portfolio ini menunjukkan kemampuan dalam pengembangan web (HTML/CSS/JS), desain responsive, dan deployment. Semua proyek yang ditampilkan adalah project nyata yang telah dikerjakan, termasuk aplikasi AR (Unity + Vuforia) untuk skripsi dan sistem helpdesk (PHP + MySQL).
+Catatan untuk recruiter: Portfolio ini menunjukkan kemampuan dalam pengembangan web (HTML/CSS/JS), desain responsive, dan deployment. Semua proyek yang ditampilkan adalah project nyata yang telah dikerjakan, termasuk aplikasi AR (Unity + Vuforia) untuk skripsi dan website kursus mengemudi.
