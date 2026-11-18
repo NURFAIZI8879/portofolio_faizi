@@ -19,6 +19,10 @@ Website portfolio pribadi yang menampilkan profil, skills, pengalaman, pendidika
 |---------|--------|
 | ![Halaman utama - desktop](docs/screenshots/hero.png) | ![Halaman utama - mobile](docs/screenshots/mobile.png) |
 
+### Section Projects
+
+![Section Projects - desktop](docs/screenshots/projects.jpg)
+
 ---
 
 ## Latar Belakang
