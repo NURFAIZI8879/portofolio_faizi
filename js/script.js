@@ -21,7 +21,7 @@ if (themeToggle) {
 
 function updateThemeIcon(theme) {
   if (themeToggle) {
-    themeToggle.textContent = theme === "dark" ? "🌙" : "☀️";
+    themeToggle.textContent = theme === "dark" ? "Dark" : "Light";
   }
 }
 
@@ -129,7 +129,7 @@ if (contactForm) {
 
     // Simulate send (replace with Formspree or actual API)
     setTimeout(() => {
-      btn.textContent = "Terkirim! ✓";
+      btn.textContent = "Terkirim! ";
       btn.style.background = "#22c55e";
       contactForm.reset();
       setTimeout(() => {
